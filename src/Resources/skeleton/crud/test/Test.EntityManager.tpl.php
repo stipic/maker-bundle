@@ -1,4 +1,7 @@
 <?= "<?php\n" ?>
+
+declare(strict_types=1);
+
 <?php use Symfony\Bundle\MakerBundle\Str; ?>
 
 namespace <?= $namespace ?>;

@@ -1,5 +1,7 @@
 <?= "<?php\n" ?>
 
+declare(strict_types=1);
+
 namespace <?= $namespace ?>;
 
 <?= $use_statements; ?>
@@ -17,7 +19,7 @@ class <?= $class_name."\n" ?>
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
-    #[ORM\Column]
+    #[ORM\Column(type: Types::INTEGER)]
     private ?int $id = null;
 
     public function getId(): ?int
